@@ -12,10 +12,7 @@ import Foundation
 
 /// `FontRegistrar` 열거형은 커스텀 폰트를 등록하는 데 사용됩니다.
 public enum FontRegistrar {
-  /// 이 메서드는 편행 폰트인 `Pretendard`를 등록합니다.
-  /// 각각의 폰트 이름을 순회하면서 `registerFont` 메서드를 호출하여 폰트를 등록합니다.
   public static func registerFonts() {
-    // Pretendard 폰트 등록
     for fontName in Pretendard.allCases.map(\.rawValue) {
       registerFont(bundle: .module, fontName: fontName, fontExtension: "otf")
     }
@@ -33,7 +30,7 @@ public enum FontRegistrar {
     else {
       return // 폰트 로딩에 실패할 경우 함수를 종료합니다.
     }
-    // CoreText를 사용하여 폰트를 시스템에 등록합니다.
+
     CTFontManagerRegisterGraphicsFont(font, nil)
   }
 }

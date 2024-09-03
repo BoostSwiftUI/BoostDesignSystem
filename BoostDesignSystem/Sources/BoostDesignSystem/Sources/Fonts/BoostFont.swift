@@ -30,3 +30,17 @@ public enum BoostFont {
     case regular(CGFloat)
   }
 }
+
+
+struct ContentView: View {
+  var body: some View {
+    Text("Hello, World!")
+      .font(.pretendard(.black, size: 20))
+  }
+}
+
+#Preview {
+  FontRegistrar.registerFonts()
+  return ContentView()
+
+}
