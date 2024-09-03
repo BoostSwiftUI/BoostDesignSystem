@@ -64,6 +64,8 @@ private extension BoostFont {
         .custom(Pretendard.medium.rawValue, size: size)
     case let .caption1(.regular(size)):
         .custom(Pretendard.regular.rawValue, size: size)
+    case let .pretendard(style, size):
+        .custom(style.rawValue, size: size)
     }
   }
 }

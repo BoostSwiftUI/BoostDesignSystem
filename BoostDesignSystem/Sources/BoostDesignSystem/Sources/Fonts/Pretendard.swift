@@ -7,7 +7,7 @@
 
 // MARK: - Pretendard
 
-enum Pretendard: String, CaseIterable {
+public enum Pretendard: String, CaseIterable {
   case black = "Pretendard-Black"
 
   case extraBold = "Pretendard-ExtraBold"

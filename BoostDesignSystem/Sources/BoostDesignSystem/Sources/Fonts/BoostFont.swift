@@ -16,6 +16,7 @@ public enum BoostFont {
   case body1(Weight)
   case body2(Weight)
   case caption1(WeightWithSize)
+  case pretendard(_ name: Pretendard, size: CGFloat)
 
   public enum Weight {
     case bold
