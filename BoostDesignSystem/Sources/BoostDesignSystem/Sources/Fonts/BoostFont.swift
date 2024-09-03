@@ -24,8 +24,8 @@ public enum BoostFont {
   }
 
   public enum WeightWithSize {
-    case bold(Int)
-    case medium(Int)
-    case regular(Int)
+    case bold(CGFloat)
+    case medium(CGFloat)
+    case regular(CGFloat)
   }
 }
