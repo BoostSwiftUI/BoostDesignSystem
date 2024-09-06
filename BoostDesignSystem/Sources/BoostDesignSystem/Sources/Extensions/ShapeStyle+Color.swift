@@ -61,4 +61,21 @@ public extension Color {
       case placeholder
     }
   }
+
+  // MARK: - Naver Map
+
+  enum NaverMap {
+    static var primary: Color     { .init(0x437CFD) }
+    static var red: Color         { .init(0xFF5475) }
+    static var orange: Color      { .init(0xFD8B52) }
+    static var yellow: Color      { .init(0xFFBA00) }
+    static var lightGreen: Color  { .init(0x87C700) }
+    static var green: Color       { .init(0x87C700) }
+    static var cyan: Color        { .init(0x00C6D8) }
+    static var grayBlue: Color    { .init(0x85B4DB) }
+    static var blue: Color        { .init(0x4588CC) }
+    static var pink: Color        { .init(0xFF75AB) }
+    static var purple: Color      { .init(0x6368DB) }
+    static var brown: Color       { .init(0xA37256) }
+  }
 }
