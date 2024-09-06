@@ -9,6 +9,9 @@ import SwiftUI
 
 public extension ShapeStyle where Self == Color {
 
+  typealias Pillyze = Self.Pillyze
+  typealias NaverMap = Self.NaverMap
+
   // MARK: - Gray Scale
 
   static var gray50: Color { .init("Gray Scale/gray50", bundle: .module) }
