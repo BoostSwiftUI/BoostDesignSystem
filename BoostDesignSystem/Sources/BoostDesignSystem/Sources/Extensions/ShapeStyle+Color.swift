@@ -22,3 +22,43 @@ public extension ShapeStyle where Self == Color {
   static var gray800: Color { .init("Gray Scale/gray800", bundle: .module) }
   static var gray900: Color { .init("Gray Scale/gray900", bundle: .module) }
 }
+
+public extension Color {
+
+  // MARK: - Pillyze
+
+  enum Pillyze {
+
+    static var disabled: Color { .init(0xD7DAE1) }
+
+    static func primary(_ status: PrimaryStatus = .default) -> Color {
+      switch status {
+      case .default:      .init(0x6D2FF2)
+      case .pressed:      .init(0x5726C2)
+      case .disabled:     .init(0xF8F7FC)
+      case .placeholder:  .init(0xF8F7FC)
+      }
+    }
+
+    static func text(_ status: TextStatus) -> Color {
+      switch status {
+      case .normal:       .init(0x212025)
+      case .secondary:    .init(0x615F6C)
+      case .placeholder:  .init(0xA6A9B0)
+      }
+    }
+
+    public enum PrimaryStatus {
+      case `default`
+      case pressed
+      case disabled
+      case placeholder
+    }
+
+    public enum TextStatus {
+      case normal
+      case secondary
+      case placeholder
+    }
+  }
+}
